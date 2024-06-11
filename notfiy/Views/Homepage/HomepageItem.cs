@@ -1,6 +1,7 @@
 ﻿using notfiy.Controllers;
 using notfiy.Entities;
 using notfiy.Helpers;
+using notfiy.Views.Other;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -40,7 +41,7 @@ namespace notfiy.Views.Homepage
             this.NoteTextBox.Text = note.Content;
             IsPinned = note.Pinned;
             RearangeNoteItemsAction = rearangeNoteItemsAction;
-          
+
 
         }
 
@@ -113,6 +114,15 @@ namespace notfiy.Views.Homepage
         private void kryptonLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void kryptonButton1_Click(object sender, EventArgs e)
+        {
+            PopUpShare popupshare = new PopUpShare();
+            this.Controls.Add(popupshare);
+            popupshare.BringToFront();
+            popupshare.BackColor = Color.Transparent;
+            popupshare.Location = new Point(100, 0);
         }
     }
 }

@@ -71,6 +71,7 @@
             kryptonButton1.StateCommon.Border.DrawBorders = Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom | Krypton.Toolkit.PaletteDrawBorders.Left | Krypton.Toolkit.PaletteDrawBorders.Right;
             kryptonButton1.TabIndex = 12;
             kryptonButton1.Values.Text = "";
+            kryptonButton1.Click += kryptonButton1_Click;
             // 
             // kryptonListBox1
             // 
@@ -105,16 +106,6 @@
             kryptonPictureBox1.TabStop = false;
             kryptonPictureBox1.Visible = false;
             kryptonPictureBox1.Click += ClickItem;
-            // 
-            // kryptonPictureBox1
-            // 
-            kryptonPictureBox1.Location = new Point(3, 3);
-            kryptonPictureBox1.Name = "kryptonPictureBox1";
-            kryptonPictureBox1.Size = new Size(243, 82);
-            kryptonPictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
-            kryptonPictureBox1.TabIndex = 14;
-            kryptonPictureBox1.TabStop = false;
-            kryptonPictureBox1.Visible = false;
             // 
             // NoteName
             // 
